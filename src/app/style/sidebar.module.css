@@ -1,0 +1,70 @@
+.appBar{
+    background-color: var(--navbar-background-color) !important;
+    color: black !important;
+    position: fixed !important;
+}
+
+/* search bar section start here  */
+.SearchParent{
+    margin-right: auto;
+    position: relative;
+}
+
+.SearchInput {
+    border: none;
+    outline: none;
+    padding: 8px 30px 8px 10px;
+    width: 240px;
+    background-color: rgba(242, 242, 242, 255);
+    border-radius: 10px;
+  }
+
+  .SearchIcon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #555;
+  }
+
+  /* Header side bar  section start here  */
+
+  .headerLogo {
+    justify-content: space-between !important;
+  }
+
+  .logoImg {
+    width: 65%;
+    height: 40px;
+  }
+
+  .logoImg img{
+    height: 100%;
+    width: 100%;
+  }
+
+  .LogoColor {
+    color: var(--icon_logo_color_navbar) !important;
+  }
+
+  /* List css start here  */
+  .ListParent{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+
+  .ListItem{
+    display: block;
+    padding: 0px;
+  }
+
+  .ListItemButton{
+    min-height: 40px;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+
+  .ListItemIcon{
+    justify-content: center;
+    min-width: 0px;
+  }
