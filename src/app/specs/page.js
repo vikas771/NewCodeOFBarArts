@@ -1,10 +1,14 @@
 import React from 'react'
+import Layout from '../component/Layout'
 
 const page = () => {
     return (
-        <div>
-            <h1> Hello  i am here for specs tab </h1>
-        </div>
+        <Layout>
+
+            <div>
+                <h1> Hello  i am here for specs tab </h1>
+            </div>
+        </Layout>
     )
 }
 

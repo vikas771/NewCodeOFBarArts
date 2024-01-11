@@ -33,7 +33,7 @@ import Switch from '@mui/material/Switch';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import { Avatar } from '@mui/material';
 import { usePathname, useRouter } from 'next/navigation';
-import Style from '../style/sidebar.module.css'
+import Style from '../style/Layout.module.css'
 
 const drawerWidth = 240;
 
@@ -102,7 +102,7 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
     }),
 );
 
-export default function layout() {
+export default function Layout({ children }) {
     const router = useRouter();
     const pathname = usePathname()
     const theme = useTheme();
@@ -110,26 +110,36 @@ export default function layout() {
     const [isDarkMode, setDarkMode] = useState(false);
     const [isCollapselibrary, setIsCollapseLibrary] = useState(false);
 
+    // functon for open sidenavbar 
     const handleDrawerOpen = () => {
         setOpen(true);
     };
 
-    const handleCollapseLibrary = () => {
-        setIsCollapseLibrary(!isCollapselibrary);
-    };
-
+    // function for toggle on sidenavbar 
     const handleDrawerClose = () => {
         setOpen(false);
     };
 
+    // function for view all sub tabs of specs section 
+    const handleCollapseLibrary = () => {
+        setIsCollapseLibrary(!isCollapselibrary);
+    };
+
+    // function for toogle button of changing light to dark mode 
     const hangleChangeDarkMode = () => {
         setDarkMode((prev) => !prev);
     };
 
+    // function for redirect to seprate details component 
     const handleTabClick = (tabName) => {
         router.push(`/${tabName.toLowerCase()}`);
     };
 
+    // function for calling invoking two function at onclick at specs section
+    const handleWrapper = (text) => {
+        handleCollapseLibrary();
+        handleTabClick(text);
+    };
     return (
         <Box sx={{ display: 'flex' }}>
             <CssBaseline />
@@ -187,7 +197,7 @@ export default function layout() {
                     </Box>
                 </Toolbar>
             </AppBar>
-            <Drawer variant="permanent" open={open}>
+            <Drawer variant="permanent" open={open}  >
                 {/* project logo and icon  */}
                 <DrawerHeader className={Style.headerLogo}>
                     <div className={Style.logoImg}>
@@ -203,7 +213,7 @@ export default function layout() {
                 <List className={Style.ListParent}>
                     {['Dashboard', 'Library', 'Checklist', 'Marriott', 'Setting']
                         .map((text, index) => (
-                            <ListItem key={text}   className={`${Style.ListItem} ${router.pathname && router.pathname.toLowerCase() === `/${text.toLowerCase()}` ? Style.activeTab : ''}`} onClick={() => handleTabClick(text)}>
+                            <ListItem key={text} className={Style.ListItem} onClick={() => handleTabClick(text)}>
                                 <ListItemButton className={Style.ListItemButton}
                                     sx={{ justifyContent: open ? 'initial' : 'center' }}>
                                     <ListItemIcon className={Style.ListItemIcon}
@@ -219,7 +229,8 @@ export default function layout() {
                             </ListItem>
                         ))}
 
-                    <ListItem  className={Style.ListItem} onClick={() => handleCollapseLibrary()}>
+                    {/* Spec main section tab  */}
+                    <ListItem className={Style.ListItem} onClick={() => handleWrapper("Specs")}>
                         <ListItemButton className={Style.ListItemButton}
                             sx={{ justifyContent: open ? 'initial' : 'center' }} >
                             <ListItemIcon className={Style.ListItemIcon}
@@ -227,14 +238,14 @@ export default function layout() {
                                 <LocalBarIcon />
                             </ListItemIcon>
                             <ListItemText primary="Specs" sx={{ opacity: open ? 1 : 0 }} />
-                            {open ? (isCollapselibrary ? <ExpandLess /> : <ExpandMore />) : ''}
+                            {open ? (isCollapselibrary ? <ExpandLess /> : <ExpandMore />) : 'Specs'}
                         </ListItemButton>
                     </ListItem>
 
                     {/* Inner tabs of specs section  */}
                     <Collapse in={isCollapselibrary} timeout="auto">
-                        {['Cocktails', 'Spirits', 'Wine', 'Beer', 'Low',].map((text, index) => (
-                            <ListItem key={text}  className={Style.ListItem}>
+                        {['Cocktails', 'Spirits', 'Wine', 'Beer', 'Low/ No ABV',].map((text, index) => (
+                            <ListItem key={text} className={Style.ListItem} onClick={() => handleTabClick("Specs/" + text)}>
                                 <ListItemButton className={Style.ListItemButton}
                                     sx={{ justifyContent: open ? 'initial' : 'center' }}
                                 >
@@ -256,9 +267,16 @@ export default function layout() {
                 </List>
 
             </Drawer>
-            {/* <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
-                <DrawerHeader />
-            </Box> */}
+            <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
+                <main>
+                    {children}
+                </main>
+                {/* <DrawerHeader /> */}
+                {/* {props.children} */}
+                {/* <Typography> Devendra Devendra Devendra Devendra Devendra</Typography>
+               <Typography> Devendra Devendra Devendra Devendra Devendra</Typography>
+               <Typography> Devendra Devendra Devendra Devendra Devendra</Typography> */}
+            </Box>
         </Box>
 
     );
