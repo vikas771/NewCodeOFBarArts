@@ -267,16 +267,9 @@ export default function Layout({ children }) {
                 </List>
 
             </Drawer>
-            <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
-                <main>
+          <main className={Style.MainParent}>
                     {children}
                 </main>
-                {/* <DrawerHeader /> */}
-                {/* {props.children} */}
-                {/* <Typography> Devendra Devendra Devendra Devendra Devendra</Typography>
-               <Typography> Devendra Devendra Devendra Devendra Devendra</Typography>
-               <Typography> Devendra Devendra Devendra Devendra Devendra</Typography> */}
-            </Box>
         </Box>
 
     );

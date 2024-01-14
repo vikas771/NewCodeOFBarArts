@@ -1,0 +1,277 @@
+.DashboardSection {
+    padding: 10px;
+    background-color: rgba(248, 248, 248, 255);
+    margin-top:25px;
+}
+
+/* common css for headading and subheading start here  */
+
+.HeadingStyleText h4{
+    font-size: 16px;
+    margin: 12px;
+    color: var(--headingColor);
+}
+
+.HeadingStyleText p{
+    font-size: 14px;
+    margin: 12px;
+    color: var(--subheadingColor);
+}
+
+/* common css for headading and subheading end here  */
+
+/* first section start here  */
+.FirstParent h2 {
+    margin: 5px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    font-size: 20px;
+    color: var(--headingColor);
+}
+
+.FirstParent p {
+    margin: 10px !important;
+    margin-top: 0px !important;
+    font-size: 14px;
+    color: var(--subheadingColor);
+}
+
+.GraphParent {
+    background-color: rgba(255, 255, 255, 255);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.HeadingText {
+    display: flex;
+    justify-content: space-between;
+}
+
+.HeadingText h6 {
+    border: 1px solid rgb(214 214 214);
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #697077;
+}
+
+.graphImg {
+    width: 100%;
+    border: 1px solid rgb(214 214 214);
+}
+
+.graphImg img {
+    width: 100%;
+    margin-bottom: -6px;
+}
+
+.PieGraphParent {
+    background-color: rgba(255, 255, 255, 255);
+    height: 100% !important;
+    border: 1px solid rgb(214 214 214);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.StatusParent {
+    display: flex;
+    justify-content: center;
+}
+
+
+.Innertext {
+    font-size: .875rem !important;
+    color: rgba(42, 197, 94, 255) !important;
+}
+
+.ProgressBarChild {
+    margin-top: 30px;
+}
+
+.ProgressStatus {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    color: rgb(60 169 7);
+    background:
+        radial-gradient(closest-side, white 70%, transparent 60% 100%),
+        conic-gradient(rgb(60 169 7) 68%, rgba(221, 225, 230, 255) 0);
+}
+
+.ProgressStatus h6 {
+    position: absolute;
+    font-size: 1.125rem;
+    top: 39%;
+    left: 42%;
+}
+
+.ProgressStatus p {
+    position: absolute;
+    font-size: 1.125rem;
+    top: 50%;
+    left: 25%;
+    color: rgb(60 169 7);
+}
+
+.endSection {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.SquarePareent {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.firstSquare {
+    height: 15px;
+    width: 15px;
+    background-color: rgba(19, 135, 0, 255);
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.secondSquare {
+    height: 15px;
+    width: 15px;
+    background-color: rgba(221, 225, 230, 255);
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.Progress {
+    background-color: rgba(255, 255, 255, 255);
+    height: 100% !important;
+    border: 1px solid rgb(214 214 214);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.BoxesParent {
+    margin-top: 50px;
+}
+
+.SquareBoxFirst {
+    display: flex;
+    align-items: center;
+}
+
+.InnerFirst {
+    height: 15px;
+    width: 15px;
+    border-radius: 25%;
+    background-color: rgba(254, 168, 50, 255);
+    margin-right: 5px;
+}
+
+.SquareBoxSecond {
+    height: 15px;
+    width: 15px;
+    border-radius: 25%;
+    background-color: rgba(115, 92, 255, 255);
+    margin-right: 5px;
+}
+
+.SquareBoxThird {
+    height: 15px;
+    width: 15px;
+    border-radius: 25%;
+    background-color: rgba(255, 131, 65, 255);
+    margin-right: 5px;
+}
+
+/* first section end here  */
+
+/* second section start her  */
+
+.SecondParent {
+    margin-top: 10px;
+}
+
+.FlashcardParent {
+    background-color: rgba(255, 255, 255, 255);
+    border: 1px solid rgb(214 214 214);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.FirstCircle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progressbar {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background:
+        radial-gradient(closest-side, white 79%, transparent 80% 100%),
+        conic-gradient(rgba(255, 131, 65, 255) 54%, #A3B5A8 0);
+}
+
+.progressbar p {
+    font-size: 16px;
+    color: var(--headingColor);
+}
+
+.scrollContainer {
+    margin-top: 15px;
+    height: 330px;
+    overflow-y: auto; 
+    position: relative;
+  }
+  
+.scrollContainer::-webkit-scrollbar {
+    width: 5px; 
+  }
+  
+  .scrollContainer::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 131, 65, 255);
+    border: none; 
+  }
+  
+  .scrollContainer::-webkit-scrollbar-track {
+    background-color: transparent; 
+  }
+
+.IconParent {
+    display: flex;
+    align-items: center;
+    border: 2px solid rgba(246, 246, 246, 255);
+    background-color: rgba(255, 255, 255, 255);
+    padding: 5px;
+}
+
+.iconStyle {
+    background-color: rgba(242, 242, 242, 255) !important;
+    font-size: 34px !important;
+    color: rgb(223 223 223) !important;
+}
+
+.IconText {
+    margin-left: 20px;
+}
+
+.IconParent h6 {
+    font-size: 14px;
+    margin-bottom: 6px;
+    margin-top: 10px;
+}
+
+.IconParent p {
+    font-size: 12px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.ListItem {
+    box-shadow: none !important;
+    border: none !important;
+    display: block !important;
+}
+
+/* second section end here  */

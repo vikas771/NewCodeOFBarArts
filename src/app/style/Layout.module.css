@@ -69,27 +69,6 @@
     min-width: 0px;
   }
 
-
-
-
-
-  .drawer {
-  width: var(--drawer-width);
-  flex-shrink: 0;
-  white-space: nowrap;
-  box-sizing: border-box;
-
-  &.open {
-    @extend .openedMixin;
-    & .MuiDrawer-paper {
-      @extend .openedMixin;
-    }
-  }
-
-  &.closed {
-    @extend .closedMixin;
-    & .MuiDrawer-paper {
-      @extend .closedMixin;
-    }
-  }
+.MainParent{
+  margin-top:30px;
 }

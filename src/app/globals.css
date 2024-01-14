@@ -1,13 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400&display=swap');
+
 :root {
-    --navbar-background-color: #fff;
-    --navbar-text-color: #fff;
-    --font_family: 'Poppins', sans-serif !important;
-    --icon_logo_color_navbar: #FF8341;
-    --icon_selected_color_navbar: rgb(255 131 65);
-    --icon_selected_background_color: #f19b6c33;
-    --textColor: white;
-    --buttonTextColor: #fff;
-    --headingColor: #000000;
-    --subheadingColor: #505d6f;
-    --fontFamily: " font-family: 'Mulish', sans-serif;"
-  }
+  --navbar-background-color: #fff;
+  --navbar-text-color: #fff;
+  --font_family: 'Poppins', 'Mulish', sans-serif !important;
+  --icon_logo_color_navbar: #FF8341;
+  --icon_selected_color_navbar: rgb(255 131 65);
+  --icon_selected_background_color: #f19b6c33;
+  --textColor: white;
+  --buttonTextColor: #fff;
+  --headingColor: #000000;
+  --subheadingColor: #505d6f;
+  --fontFamily: " font-family: 'Mulish', sans-serif;"
+}
+
+
+body {
+  font-family: 'Poppins', 'Mulish', sans-serif !important;
+}
