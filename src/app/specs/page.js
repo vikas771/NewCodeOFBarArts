@@ -4,8 +4,7 @@ import Layout from '../component/Layout';
 import { Grid } from '@mui/material';
 import React, { useRef } from 'react';
 import Style from './Specs.module.css';
-import common from '../style/Heading.module.css';
-import SearchIcon from '@mui/icons-material/Search';
+import TopHeading from '../component/TopHeading';
 import { CocktailsImg , CoreBeverage , EventPlacement } from '../productDetails';
 import Carousel from '../component/Carousel.js';
 
@@ -31,19 +30,11 @@ const page = () => {
             <Layout>
                 <div className={Style.SpecsParent}>
 
-                    <Grid container spacing={2} className='mt-1'>
-                        <Grid item xs={6} className={common.HeadingText}>
-                            <h4>Specs</h4>
-                        </Grid>
-                        <Grid item xs={6} className={common.SearchParent}>
-                            <input
-                                type="text"
-                                placeholder="Search Categories"
-                                className={common.SearchInput}
-                            />
-                            <SearchIcon className={common.SearchIcon} />
-                        </Grid>
-                    </Grid>
+                <TopHeading 
+                HeadingName = "Specs"
+                SearchInputText = "Search Categories"
+                />
+
 
                     {/* First  Carousel of Cocktails section  */}
                     <div>

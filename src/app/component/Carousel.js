@@ -7,8 +7,6 @@ const Carousel = (props) => {
     const { carouselData } = props;
     const firstBox = useRef(null);
 
-    console.log("imageUrl", props)
-
     // Carousel button for next img
     const CarouselNextImg = () => {
         let width = firstBox.current.clientWidth;

@@ -1,3 +1,7 @@
+.HeadingMainSection{
+    width: 100%;
+}
+
 .SearchParent{
     text-align: end;
     position: relative;
@@ -8,6 +12,7 @@
     font-size: 20px !important;
     font-weight: 700;
     letter-spacing: 1px;
+    margin-bottom: 0px !important;
 }
 
 .SearchInput {
@@ -21,7 +26,7 @@
   .SearchIcon {
     position: absolute;
     right: 10px;
-    top: 45%;
+    top: 67%;
     transform: translateY(-50%);
     color: #555;
   }
