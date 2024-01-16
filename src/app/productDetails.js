@@ -1,10 +1,10 @@
 export const CocktailsImg = [
     {
         id: "1",
-        pname: "Manhattan",
+        productname: "Manhattan",
         Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FCocktails%2FManhattan.png&w=1920&q=75",
         persentAlcohol: " 50.00%",
-        paratext: "An easy way to remember the proper ratio of a Manhattan is the area code of Manhattan is 212: 2 whiskey, 1 sweet vermouth, 2 dashes angostura bitters",
+        description: "An easy way to remember the proper ratio of a Manhattan is the area code of Manhattan is 212: 2 whiskey, 1 sweet vermouth, 2 dashes angostura bitters",
         VideoLink: "https://bararts.s3.amazonaws.com/Videos/MBP+-+Cocktails+-+Video+1+-+Manhattan",
         Ingredients: [
             {
@@ -49,7 +49,7 @@ export const CocktailsImg = [
                 text: "4. Garnish with a picked filthy black cherry"
             }
         ],
-        Detail: [
+        Details: [
             {
                 description: "most popular theory is that the recipe was invented by Dr. Iain Marshall in the early 1880’s for a party by Lady Randolph Churchill, the mother of Winston Churchill Unfortunately the origins of the Manhattan cocktail remain inconclusive"
             }
@@ -57,9 +57,9 @@ export const CocktailsImg = [
     },
     {
         id: "2",
-        pname: "Whiskey-Sour",
+        productname: "Whiskey-Sour",
         Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FCocktails%2FWhiskey%2BSour.png&w=1920&q=75",
-        paratext: "The ratio used for a sour is 2:1:1 - 2 strong, 1 sweet, 1 sour",
+        description: "The ratio used for a sour is 2:1:1 - 2 strong, 1 sweet, 1 sour",
         persentAlcohol: " 20.00%",
         VideoLink: "https://bararts.s3.amazonaws.com/Videos/MBP+-+Cocktails+-+Video+2+-+Whiskey+Sour",
         Ingredients: [
@@ -106,7 +106,7 @@ export const CocktailsImg = [
                 text: "3. Add ice and shake for 10 seconds, strain into chilled coupe, garnish"
             }
         ],
-        Detail: [
+        Details: [
             {
                 description: "- Dry Shake: Is the process of shaking a cocktail without ice in order to give the cocktail a silky texture and not over diluting when using egg whites or egg white alternatives. After dry shaking add ice and shake to dilution and temperature - The egg white or egg white substitute in a cocktail adds a silky and foaming texture to the cocktail - The whiskey sour is a perfect cocktail for both bourbon enthusiast and new bourbon drinkers alike"
             }
@@ -114,9 +114,9 @@ export const CocktailsImg = [
     },
     {
         id: "3",
-        pname: "Mint-Julep",
+        productname: "Mint-Julep",
         Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FCocktails%2FMint%2BJulep.png&w=1920&q=75",
-        paratext: "Mint Julep description",
+        description: "Mint Julep description",
         persentAlcohol: " 20.00%",
         VideoLink: "https://bararts.s3.amazonaws.com/Videos/MBP+-+Cocktails+-+Video+3+-+Mint+Julep",
         Ingredients: [
@@ -140,14 +140,14 @@ export const CocktailsImg = [
                 text: "1. "
             },
         ],
-        Detail: [
+        Details: [
         ]
     },
     {
         id: "4",
-        pname: "Boulevardier",
+        productname: "Boulevardier",
         Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FCocktails%2FBoulevadier.png&w=1920&q=75",
-        paratext: "",
+        description: "",
         persentAlcohol: " 25.00%",
         VideoLink: "https://bararts.s3.amazonaws.com/Videos/MBP+-+Cocktails+-+Video+4+-+Boulevardier",
         Ingredients: [
@@ -171,14 +171,14 @@ export const CocktailsImg = [
                 text: "1. "
             },
         ],
-        Detail: [
+        Details: [
         ]
     },
     {
         id: "5",
-        pname: "Sazerac",
+        productname: "Sazerac",
         Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FCocktails%2FSazerac.png&w=1920&q=75",
-        paratext: "",
+        description: "",
         persentAlcohol: " 30.00%",
         VideoLink: "https://bararts.s3.amazonaws.com/Videos/MBP+-+Cocktails+-+Video+5+-+Sazerac",
         Ingredients: [
@@ -202,14 +202,14 @@ export const CocktailsImg = [
                 text: "1."
             },
         ],
-        Detail: [
+        Details: [
         ]
     },
     {
         id: "6",
-        pname: "Old-Fashioned",
+        productname: "Old-Fashioned",
         Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FCocktails%2FOld%2BFashioned.png&w=1920&q=75",
-        paratext: "This version of the 'Old Fashioned' was first documented in 1806 and contains the 3 orgional elements to be knows as a cocktail. The core (base Spirit) the balance (sugar), and the seasoning (bitters)",
+        description: "This version of the 'Old Fashioned' was first documented in 1806 and contains the 3 orgional elements to be knows as a cocktail. The core (base Spirit) the balance (sugar), and the seasoning (bitters)",
         persentAlcohol: " 35.00%",
         VideoLink: "",
         Ingredients: [
@@ -255,7 +255,7 @@ export const CocktailsImg = [
                 text: "4. Garnish with an orange swath expressing oils over the top"
             }
         ],
-        Detail: [
+        Details: [
             {
                 description: "The muddled version of the old fashioned or known as the 1881 Pendennis Club style was said to muddle fruit in order to mask inferior whiskey at its time If you order an Old Fashioned in Wisconsin, it might be made with brandy and sprite also muddled with fruit. This was made popular during the world fair in 1893 and is still adopted today"
             }
@@ -263,9 +263,9 @@ export const CocktailsImg = [
     },
     {
         id: "7",
-        pname: "test",
+        productname: "test",
         Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2F1703069084915-41.png.webp&w=1920&q=75",
-        paratext: "test",
+        description: "test",
         persentAlcohol: " 50.00%",
         VideoLink: "https://bararts.s3.amazonaws.com/Videos/MBP+-+Cocktails+-+Video+1+-+Manhattan",
         Ingredients: [
@@ -293,7 +293,7 @@ export const CocktailsImg = [
                 text: "1. test1"
             },
         ],
-        Detail: [
+        Details: [
             {
                 description: "test"
             }

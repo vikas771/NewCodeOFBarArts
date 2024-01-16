@@ -8,6 +8,8 @@ const CartDetails = (props) => {
     const Route = useRouter()
     const {Data} = props;
 
+    console.log(Data);
+
     const GetCompleteDetails = async (id) => {
         Route.push(`/specs/cocktails/${id}`)
         console.log("props", id)
@@ -20,14 +22,14 @@ const CartDetails = (props) => {
               <div className={Style.BoxParent} onClick={() => GetCompleteDetails(item.id)}>
                 <div>
                   <div className={Style.ImgParent}>
-                    <img src={item.imageUrl} alt='not found' />
+                    <img src={item.Url} alt='not found' />
                   </div>
                 </div>
                 <div>
                   <div className={Style.TextAreaParent}>
-                    <h3>{item.pname}</h3>
-                    <span><LiquorIcon className={Style.IconStyle} /> ABV :  {item.alcoholPersent} </span>
-                    <p>{item.paratext}</p>
+                  <h3>{item.pname ? item.pname : item.productname}</h3>
+                   <span><LiquorIcon className={Style.IconStyle} /> ABV :  {item.persentAlcohol} </span>
+                    <p>{item.description}</p>
                   </div>
                 </div>
               </div>

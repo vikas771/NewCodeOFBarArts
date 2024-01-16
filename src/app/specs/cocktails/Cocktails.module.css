@@ -1,5 +1,5 @@
 .CocktailMainSection{
     margin-top:35px;
     padding: 5px;
-    background-color: rgba(248, 248, 248, 255);
+    background-color: var(--bodybackgroundColor);
 }

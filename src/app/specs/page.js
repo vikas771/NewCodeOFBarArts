@@ -1,7 +1,6 @@
 "use client"
 
 import Layout from '../component/Layout';
-import { Grid } from '@mui/material';
 import React, { useRef } from 'react';
 import Style from './Specs.module.css';
 import TopHeading from '../component/TopHeading';
@@ -9,27 +8,12 @@ import { CocktailsImg , CoreBeverage , EventPlacement } from '../productDetails'
 import Carousel from '../component/Carousel.js';
 
 const page = () => {
-
-        const cocktailsData = CocktailsImg.map(item => ({
-            imageUrl: item.Url,
-            productName: item.pname,
-        }));
-
-        const CoreBeverageData = CoreBeverage.map(item => ({
-            imageUrl: item.Url,
-            productDetails: item.pname,
-        }));
-
-        const EventPlacementData = EventPlacement.map(item => ({
-            imageUrl: item.Url,
-            productDetails: item.pname,
-        }));
-
     return (
         <>
             <Layout>
                 <div className={Style.SpecsParent}>
 
+{/* pass here heading name and placeholder of search box */}
                 <TopHeading 
                 HeadingName = "Specs"
                 SearchInputText = "Search Categories"
@@ -45,7 +29,7 @@ const page = () => {
                             imageWidth = "180px"
                             mainCarouselHeight = "290px"
                             backgroundColor = "white"
-                            carouselData={cocktailsData}
+                            carouselData={CocktailsImg}
                         />
                     </div>
 
@@ -57,7 +41,7 @@ const page = () => {
                             mainCarouselHeight = "320px"
                             imageHeight="219px"
                             imageWidth = "330px"
-                            carouselData = {CoreBeverageData}
+                            carouselData = {CoreBeverage}
                         />
                     </div>
 
@@ -69,7 +53,7 @@ const page = () => {
                             mainCarouselHeight = "430px"
                             imageHeight="100%"
                             imageWidth = "212px"
-                            carouselData = {EventPlacementData}
+                            carouselData = {EventPlacement}
                         />
                     </div>
 

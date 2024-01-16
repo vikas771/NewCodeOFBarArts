@@ -1,28 +1,30 @@
 "use client"
 
-import React from 'react'
 import Layout from '@/app/component/Layout'
-import Style from './Spirits.module.css';
+import React from 'react';
+import Style from './Wine.module.css';
 import TopHeading from '@/app/component/TopHeading';
 import MainBoxSpecs from '@/app/component/MainBoxSpecs';
-import { SpiritCategory } from '../../productDetails'
+import { WineCategory } from '../../productDetails';
 
 const page = () => {
     return (
         <>
             <Layout>
-                <div className={Style.SpritSection}>
+                <div className={Style.WineSection}>
+
                     {/* Top heading show here  */}
                     <TopHeading
-                        HeadingName="Spirits"
-                        SearchInputText="Search Spirits"
+                        HeadingName="Wine"
+                        SearchInputText="Search Wine"
                     />
 
-                    {/* pass data in props to show at ui sprits details */}
+                    {/* pass data in props to show at ui */}
                     <MainBoxSpecs
-                        Data={SpiritCategory}
+                        Data={WineCategory}
                     />
                 </div>
+
             </Layout>
         </>
     )

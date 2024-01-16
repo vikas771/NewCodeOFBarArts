@@ -5,6 +5,7 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 const Carousel = (props) => {
     const { carouselData } = props;
+    console.log(carouselData)
     const firstBox = useRef(null);
 
     // Carousel button for next img
@@ -34,9 +35,9 @@ const Carousel = (props) => {
                 <div className={Style.CarouselDetailsParent} ref={firstBox}>
                     {carouselData.map((item, index) => (
                         <div key={index} className={Style.CarouselImgTextParent} style={{backgroundColor: props.backgroundColor}}>
-                            <img src={item.imageUrl} alt='not found' style={{height: props.imageHeight, width: props.imageWidth}}/>
-                            {item.productName && <h3>{item.productName}</h3>}
-                            <h4>{item.productDetails}</h4>
+                            <img src={item.Url} alt='not found' style={{height: props.imageHeight, width: props.imageWidth}}/>
+                            {item.productname && <h3>{item.productname}</h3>}
+                            <h4>{item.pname}</h4>
                         </div>
                     ))}
                 </div>

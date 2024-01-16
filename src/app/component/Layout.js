@@ -244,7 +244,7 @@ export default function Layout({ children }) {
 
                     {/* Inner tabs of specs section  */}
                     <Collapse in={isCollapselibrary} timeout="auto">
-                        {['Cocktails', 'Spirits', 'Wine', 'Beer', 'Low/ No ABV',].map((text, index) => (
+                        {['Cocktails', 'Spirits', 'Wine', 'Beer', 'Low',].map((text, index) => (
                             <ListItem key={text} className={Style.ListItem} onClick={() => handleTabClick("Specs/" + text)}>
                                 <ListItemButton className={Style.ListItemButton}
                                     sx={{ justifyContent: open ? 'initial' : 'center' }}
