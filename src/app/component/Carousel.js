@@ -22,28 +22,36 @@ const Carousel = (props) => {
 
     return (
         <>
+        {/* Carousel main section we get here hegiht and set here  */}
             <div className={Style.CarouselMainParent} style={{height: props.mainCarouselHeight}}>
+                {/* set Carousel heading here  */}
                 <div className={Style.CarouselHeading}>
                     <div>
                         <h4>{props.CarouselHeading}</h4>
                     </div>
+                    {/* Carousel second heading if present */}
                     <div>
                         <h5>{props.CarouselHeadingSecond}</h5>
                     </div>
                 </div>
 
                 <div className={Style.CarouselDetailsParent} ref={firstBox}>
+                    {/* apply map method at data  */}
                     {carouselData.map((item, index) => (
                         <div key={index} className={Style.CarouselImgTextParent} style={{backgroundColor: props.backgroundColor}}>
+                            {/* Carousel img set here  */}
                             <img src={item.Url} alt='not found' style={{height: props.imageHeight, width: props.imageWidth}}/>
+                            {/* Carousel img name set here  */}
                             {item.productname && <h3>{item.productname}</h3>}
                             <h4>{item.pname}</h4>
                         </div>
                     ))}
                 </div>
+                {/* Carousel next img button  */}
                 <button className={Style.NextBtn} onClick={CarouselNextImg}>
                     <ArrowForwardIosIcon className={Style.PreAndNextIcon} />
                 </button>
+                {/* Carousel previous img button  */}
                 <button className={Style.PreviousBtn} onClick={CarouselPrevImg}>
                     <ArrowBackIosIcon className={Style.PreAndNextIcon} />
                 </button>

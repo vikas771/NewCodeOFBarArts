@@ -1,5 +1,5 @@
-.SpecsParent{
+.MainSection{
     margin-top: 40px;
     padding: 5px;
-    background-color: rgba(248, 248, 248, 255);
+    background-color: var(--bodybackgroundColor);
 }

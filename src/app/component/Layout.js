@@ -63,7 +63,6 @@ const DrawerHeader = styled('div')(({ theme }) => ({
     alignItems: 'center',
     justifyContent: 'flex-end',
     padding: theme.spacing(0, 1),
-    // necessary for content to be below app bar
     ...theme.mixins.toolbar,
 }));
 
@@ -140,6 +139,7 @@ export default function Layout({ children }) {
         handleCollapseLibrary();
         handleTabClick(text);
     };
+
     return (
         <Box sx={{ display: 'flex' }}>
             <CssBaseline />
@@ -267,9 +267,9 @@ export default function Layout({ children }) {
                 </List>
 
             </Drawer>
-          <main className={Style.MainParent}>
-                    {children}
-                </main>
+            <main className={Style.MainParent}>
+                {children}
+            </main>
         </Box>
 
     );

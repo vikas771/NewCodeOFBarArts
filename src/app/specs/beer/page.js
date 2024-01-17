@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react';
-import Style from './Beer.module.css';
+import Style from '../Specs.module.css';
 import Layout from '../../component/Layout';
 import TopHeading from '../../component/TopHeading';
 import { BeerDetails } from '../../productDetails';
@@ -11,7 +11,7 @@ const page = () => {
     return (
         <>
             <Layout>
-                <div className={Style.BeerSection}>
+                <div className={Style.MainSection}>
                     {/* heading is pass from here  */}
                     <TopHeading
                         HeadingName="Beer"

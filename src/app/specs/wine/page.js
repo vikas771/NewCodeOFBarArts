@@ -2,7 +2,7 @@
 
 import Layout from '@/app/component/Layout'
 import React from 'react';
-import Style from './Wine.module.css';
+import Style from '../Specs.module.css';
 import TopHeading from '@/app/component/TopHeading';
 import MainBoxSpecs from '@/app/component/MainBoxSpecs';
 import { WineCategory } from '../../productDetails';
@@ -11,7 +11,7 @@ const page = () => {
     return (
         <>
             <Layout>
-                <div className={Style.WineSection}>
+                <div className={Style.MainSection}>
 
                     {/* Top heading show here  */}
                     <TopHeading
