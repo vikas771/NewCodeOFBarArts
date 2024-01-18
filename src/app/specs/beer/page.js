@@ -21,6 +21,7 @@ const page = () => {
                     {/* details pass in props from here  */}
                     <CartDetails
                         Data={BeerDetails}
+                        routePath = "/specs/beer"
                     />
 
                 </div>

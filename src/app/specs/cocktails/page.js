@@ -20,6 +20,7 @@ const page = () => {
                     {/* Cocktails details show here  */}
                     <CartDetails
                         Data={CocktailsImg}
+                        routePath = "/specs/cocktails"
                     />
                 </div>
             </Layout>

@@ -7,11 +7,11 @@ const CartDetails = (props) => {
   const Route = useRouter()
   const { Data } = props;
 
-  console.log(Data);
+  console.log(Data)
 
   // function to get all details and redirect to it's own details component 
   const GetCompleteDetails = async (id) => {
-    Route.push(`/specs/cocktails/${id}`)
+    Route.push(`${props.routePath}/${id}`)
     console.log("props", id)
   }
 
