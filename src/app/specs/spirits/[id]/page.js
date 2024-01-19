@@ -2,10 +2,10 @@
 
 import React from 'react'
 import Layout from '@/app/component/Layout'
-import Style from '../Specs.module.css';
-import TopHeading from '@/app/component/TopHeading';
-import MainBoxSpecs from '@/app/component/MainBoxSpecs';
-import { SpiritCategory } from '../../productDetails'
+import TopHeading from '../../../component/TopHeading';
+import Style from '../../../style/Common.module.css';
+import CartDetails from '../../../component/CartDetails'
+import {GinCategory} from '../../../productDetails';
 
 const page = () => {
     return (
@@ -14,15 +14,16 @@ const page = () => {
                 <div className={Style.MainSection}>
                     {/* Top heading show here  */}
                     <TopHeading
-                        HeadingName="Spirits"
-                        SearchInputText="Search Spirits"
+                        HeadingName="Gin"
+                        SearchInputText="Search spirits"
                     />
 
                     {/* pass data in props to show at ui sprits details */}
-                    <MainBoxSpecs
-                        Data={SpiritCategory}
-                        routePath = "/specs/spirits"
+
+                    <CartDetails
+                    Data = {GinCategory} 
                     />
+                    
                 </div>
             </Layout>
         </>

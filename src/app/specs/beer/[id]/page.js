@@ -5,7 +5,7 @@ import Layout from '../../../component/Layout';
 import { useParams } from 'next/navigation';
 import Style from '../../Specs.module.css'
 import CompleteDetails from '@/app/component/CompleteDetails';
-import { CocktailsImg } from '../../../productDetails';
+import { BeerDetails } from '../../../productDetails';
 
 const page = () => {
   const params = useParams()
@@ -17,7 +17,7 @@ const page = () => {
         {/* pass here product details array and id which user selected  */}
         <div className={Style.MainSection}>
           <CompleteDetails
-            Data={CocktailsImg}
+            Data={BeerDetails}
             Id={Id}
           />
 

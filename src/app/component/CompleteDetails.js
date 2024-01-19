@@ -6,7 +6,6 @@ import LiquorIcon from '@mui/icons-material/Liquor';
 const CompleteDetails = (props) => {
   const { Data } = props;
 
-  
   // take out specific details from id and show
   const CompleteDetails = Data.find((item) => item.id === props.Id);
 
@@ -16,7 +15,7 @@ const CompleteDetails = (props) => {
     <>
       <div className={style.HeadingParent}>
         {/* show here maain heading */}
-        <h4>{CompleteDetails.productname}</h4>
+        <h4>{CompleteDetails.pname}</h4>
 
         {/* first section data here  */}
         <div className={Style.BoxParent} >
@@ -27,7 +26,7 @@ const CompleteDetails = (props) => {
           </div>
           <div>
             <div className={Style.TextAreaParent}>
-              <h3>{CompleteDetails.productname}</h3>
+              <h3>{CompleteDetails.pname}</h3>
               <span><LiquorIcon className={Style.IconStyle} /> ABV :  {CompleteDetails.persentAlcohol} </span>
               <p>{CompleteDetails.description}</p>
             </div>
@@ -37,46 +36,64 @@ const CompleteDetails = (props) => {
         {/* Ingredients section start here   */}
         {CompleteDetails.Ingredients.length > 0 && (
           <div className={style.MainSection}>
+            <h3>Ingredients</h3>
             {CompleteDetails.Ingredients.map((item) => (
               <div key={item.id} className={style.TextHeading}>
-                <h3>Ingredients</h3>
-                <p>{item.startText}</p>
-                <p>{item.endText}</p>
+                <p>{item.StartingText}</p>
+                <p>{item.EndingText}</p>
               </div>
             ))}
           </div>
         )}
 
         {/* Presentations section start here  */}
-        <div className={style.MainSection}>
-          <h3>Presentations</h3>
-          {CompleteDetails.Presentations.map((item) => (
-            <div key={item.id} className={style.TextHeading}>
-              <p>{item.startText}</p>
-              <p>{item.endText}</p>
-            </div>
-          ))}
-        </div>
+        {CompleteDetails.Presentations.length > 0 ? (
+          <div className={style.MainSection}>
+            <h3>Presentations</h3>
+            {CompleteDetails.Presentations.map((item) => (
+              <div key={item.id} className={style.TextHeading}>
+                <p>{item.StartingText}</p>
+                <p>{item.EndingText}</p>
+              </div>
+            ))}
+          </div>
+        ) : null}
 
         {/*  Methods section start here  */}
-        <div className={style.MainSection}>
-          <h3>Methods</h3>
-          {CompleteDetails.Methods.map((item => (
-            <div key={item.id} className={style.TextHeading}>
-              <p>{item.text}</p>
-            </div>
-          )))}
-        </div>
+        {CompleteDetails.Methods.length > 0 ? (
+          <div className={style.MainSection}>
+            <h3>Methods</h3>
+            {CompleteDetails.Methods.map((item => (
+              <div key={item.id} className={style.TextHeading}>
+                <p>{item.text}</p>
+              </div>
+            )))}
+          </div>
+        ) : (null)}
+
 
         {/* Details section start here   */}
-        {CompleteDetails.Details.length > 0 && (
+        {CompleteDetails.Details.length > 0 ? (
           <div className={style.DetailParent}>
             <h3>Detail</h3>
             {CompleteDetails.Details.map((item => (
               <p key={item.id}>{item.description}</p>
             )))}
           </div>
-        )}
+        ) : (null)}
+
+        {/* these details are only show in beer section start here   */}
+        {CompleteDetails.SecondDetails.length > 0 ? (
+          <div className={style.MainSection}>
+            <h3>Details</h3>
+            {CompleteDetails.SecondDetails.map((item) => (
+              <div key={item.id} className={style.TextHeading}>
+                <p>{item.StartingText}</p>
+                <p>{item.EndingText}</p>
+              </div>
+            ))}
+          </div>
+        ) : null}
 
         {/* Video section start here  */}
         {CompleteDetails.VideoLink ? (

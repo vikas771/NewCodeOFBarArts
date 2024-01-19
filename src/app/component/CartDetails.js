@@ -12,7 +12,6 @@ const CartDetails = (props) => {
   // function to get all details and redirect to it's own details component 
   const GetCompleteDetails = async (id) => {
     Route.push(`${props.routePath}/${id}`)
-    console.log("props", id)
   }
 
   return (

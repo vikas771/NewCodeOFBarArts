@@ -1,38 +1,38 @@
 export const CocktailsImg = [
     {
         id: "1",
-        productname: "Manhattan",
+        pname: "Manhattan",
         Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FCocktails%2FManhattan.png&w=1920&q=75",
         persentAlcohol: " 50.00%",
         description: "An easy way to remember the proper ratio of a Manhattan is the area code of Manhattan is 212: 2 whiskey, 1 sweet vermouth, 2 dashes angostura bitters",
         VideoLink: "https://bararts.s3.amazonaws.com/Videos/MBP+-+Cocktails+-+Video+1+-+Manhattan",
         Ingredients: [
             {
-                startText: "Rye whiskey (can be made with bourbon)",
-                endText: '2 oz'
+                StartingText: "Rye whiskey (can be made with bourbon)",
+                EndingText: '2 oz'
             },
             {
-                startText: "Sweet Vermouth",
-                endText: '1 oz'
+                StartingText: "Sweet Vermouth",
+                EndingText: '1 oz'
             },
             {
-                startText: "Angostura Bitters",
-                endText: '2 dashes'
+                StartingText: "Angostura Bitters",
+                EndingText: '2 dashes'
             },
 
         ],
         Presentations: [
             {
-                startText: "Ice",
-                endText: "N/A"
+                StartingText: "Ice",
+                EndingText: "N/A"
             },
             {
-                startText: "Glassware",
-                endText: "Coupe"
+                StartingText: "Glassware",
+                EndingText: "Coupe"
             },
             {
-                startText: "Garnish",
-                endText: "Pickled Filthy cherry"
+                StartingText: "Garnish",
+                EndingText: "Pickled Filthy cherry"
             },
         ],
         Methods: [
@@ -53,46 +53,48 @@ export const CocktailsImg = [
             {
                 description: "most popular theory is that the recipe was invented by Dr. Iain Marshall in the early 1880’s for a party by Lady Randolph Churchill, the mother of Winston Churchill Unfortunately the origins of the Manhattan cocktail remain inconclusive"
             }
-        ]
+        ],
+        SecondDetails: [
+        ],
     },
     {
         id: "2",
-        productname: "Whiskey-Sour",
+        pname: "Whiskey-Sour",
         Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FCocktails%2FWhiskey%2BSour.png&w=1920&q=75",
         description: "The ratio used for a sour is 2:1:1 - 2 strong, 1 sweet, 1 sour",
         persentAlcohol: " 20.00%",
         VideoLink: "https://bararts.s3.amazonaws.com/Videos/MBP+-+Cocktails+-+Video+2+-+Whiskey+Sour",
         Ingredients: [
             {
-                startText: "Bourbon",
-                endText: '2 oz'
+                StartingText: "Bourbon",
+                EndingText: '2 oz'
             },
             {
-                startText: "Simple syrup 1:1",
-                endText: '1 oz'
+                StartingText: "Simple syrup 1:1",
+                EndingText: '1 oz'
             },
             {
-                startText: "Lemon juice",
-                endText: '1 oz'
+                StartingText: "Lemon juice",
+                EndingText: '1 oz'
             },
             {
-                startText: "egg white or vegan substitute",
-                endText: '1 unit'
+                StartingText: "egg white or vegan substitute",
+                EndingText: '1 unit'
             },
 
         ],
         Presentations: [
             {
-                startText: "Ice",
-                endText: "N/A"
+                StartingText: "Ice",
+                EndingText: "N/A"
             },
             {
-                startText: "Glassware",
-                endText: "Coupe"
+                StartingText: "Glassware",
+                EndingText: "Coupe"
             },
             {
-                startText: "Garnish",
-                endText: "Lemon twist, Filthy cherry"
+                StartingText: "Garnish",
+                EndingText: "Lemon twist, Filthy cherry"
             },
         ],
         Methods: [
@@ -110,11 +112,13 @@ export const CocktailsImg = [
             {
                 description: "- Dry Shake: Is the process of shaking a cocktail without ice in order to give the cocktail a silky texture and not over diluting when using egg whites or egg white alternatives. After dry shaking add ice and shake to dilution and temperature - The egg white or egg white substitute in a cocktail adds a silky and foaming texture to the cocktail - The whiskey sour is a perfect cocktail for both bourbon enthusiast and new bourbon drinkers alike"
             }
-        ]
+        ],
+        SecondDetails: [
+        ],
     },
     {
         id: "3",
-        productname: "Mint-Julep",
+        pname: "Mint-Julep",
         Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FCocktails%2FMint%2BJulep.png&w=1920&q=75",
         description: "Mint Julep description",
         persentAlcohol: " 20.00%",
@@ -123,16 +127,16 @@ export const CocktailsImg = [
         ],
         Presentations: [
             {
-                startText: "Glassware",
-                endText: "N/A"
+                StartingText: "Glassware",
+                EndingText: "N/A"
             },
             {
-                startText: "Ice",
-                endText: "N/A"
+                StartingText: "Ice",
+                EndingText: "N/A"
             },
             {
-                startText: "Garnish",
-                endText: "N/A"
+                StartingText: "Garnish",
+                EndingText: "N/A"
             },
         ],
         Methods: [
@@ -141,11 +145,13 @@ export const CocktailsImg = [
             },
         ],
         Details: [
-        ]
+        ],
+        SecondDetails: [
+        ],
     },
     {
         id: "4",
-        productname: "Boulevardier",
+        pname: "Boulevardier",
         Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FCocktails%2FBoulevadier.png&w=1920&q=75",
         description: "",
         persentAlcohol: " 25.00%",
@@ -154,16 +160,16 @@ export const CocktailsImg = [
         ],
         Presentations: [
             {
-                startText: "Glassware",
-                endText: "N/A"
+                StartingText: "Glassware",
+                EndingText: "N/A"
             },
             {
-                startText: "Ice",
-                endText: "N/A"
+                StartingText: "Ice",
+                EndingText: "N/A"
             },
             {
-                startText: "Garnish",
-                endText: "N/A"
+                StartingText: "Garnish",
+                EndingText: "N/A"
             },
         ],
         Methods: [
@@ -172,11 +178,13 @@ export const CocktailsImg = [
             },
         ],
         Details: [
-        ]
+        ],
+        SecondDetails: [
+        ],
     },
     {
         id: "5",
-        productname: "Sazerac",
+        pname: "Sazerac",
         Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FCocktails%2FSazerac.png&w=1920&q=75",
         description: "",
         persentAlcohol: " 30.00%",
@@ -185,16 +193,16 @@ export const CocktailsImg = [
         ],
         Presentations: [
             {
-                startText: "Glassware",
-                endText: "N/A"
+                StartingText: "Glassware",
+                EndingText: "N/A"
             },
             {
-                startText: "Ice",
-                endText: "N/A"
+                StartingText: "Ice",
+                EndingText: "N/A"
             },
             {
-                startText: "Garnish",
-                endText: "N/A"
+                StartingText: "Garnish",
+                EndingText: "N/A"
             },
         ],
         Methods: [
@@ -203,42 +211,44 @@ export const CocktailsImg = [
             },
         ],
         Details: [
-        ]
+        ],
+        SecondDetails: [
+        ],
     },
     {
         id: "6",
-        productname: "Old-Fashioned",
+        pname: "Old-Fashioned",
         Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FCocktails%2FOld%2BFashioned.png&w=1920&q=75",
         description: "This version of the 'Old Fashioned' was first documented in 1806 and contains the 3 orgional elements to be knows as a cocktail. The core (base Spirit) the balance (sugar), and the seasoning (bitters)",
         persentAlcohol: " 35.00%",
         VideoLink: "",
         Ingredients: [
             {
-                startText: "Bourbon",
-                endText: '2 oz'
+                StartingText: "Bourbon",
+                EndingText: '2 oz'
             },
             {
-                startText: "Demerara Syrup 2:1",
-                endText: '0 oz'
+                StartingText: "Demerara Syrup 2:1",
+                EndingText: '0 oz'
             },
             {
-                startText: "Angostura Bitters",
-                endText: '3 dashes'
+                StartingText: "Angostura Bitters",
+                EndingText: '3 dashes'
             },
 
         ],
         Presentations: [
             {
-                startText: "Glassware",
-                endText: "Rocks"
+                StartingText: "Glassware",
+                EndingText: "Rocks"
             },
             {
-                startText: "Ice",
-                endText: "Large Format"
+                StartingText: "Ice",
+                EndingText: "Large Format"
             },
             {
-                startText: "Garnish",
-                endText: "Orange Swath, *optional filthy cherry"
+                StartingText: "Garnish",
+                EndingText: "Orange Swath, *optional filthy cherry"
             },
         ],
         Methods: [
@@ -259,33 +269,35 @@ export const CocktailsImg = [
             {
                 description: "The muddled version of the old fashioned or known as the 1881 Pendennis Club style was said to muddle fruit in order to mask inferior whiskey at its time If you order an Old Fashioned in Wisconsin, it might be made with brandy and sprite also muddled with fruit. This was made popular during the world fair in 1893 and is still adopted today"
             }
-        ]
+        ],
+        SecondDetails: [
+        ],
     },
     {
         id: "7",
-        productname: "test",
+        pname: "test",
         Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2F1703069084915-41.png.webp&w=1920&q=75",
         description: "test",
         persentAlcohol: " 50.00%",
         VideoLink: "https://bararts.s3.amazonaws.com/Videos/MBP+-+Cocktails+-+Video+1+-+Manhattan",
         Ingredients: [
             {
-                startText: "Rye whiskey (can be made with bourbon)",
-                endText: '50 dashes'
+                StartingText: "Rye whiskey (can be made with bourbon)",
+                EndingText: '50 dashes'
             },
         ],
         Presentations: [
             {
-                startText: "Glassware",
-                endText: "50"
+                StartingText: "Glassware",
+                EndingText: "50"
             },
             {
-                startText: "Ice",
-                endText: "50"
+                StartingText: "Ice",
+                EndingText: "50"
             },
             {
-                startText: "Garnish",
-                endText: "50"
+                StartingText: "Garnish",
+                EndingText: "50"
             },
         ],
         Methods: [
@@ -297,7 +309,10 @@ export const CocktailsImg = [
             {
                 description: "test"
             }
-        ]
+        ],
+        SecondDetails: [
+
+        ],
     },
 ]
 
@@ -379,24 +394,24 @@ export const SpiritCategory = [
         ],
         Details: [
             {
-                FirstText: "Distillery",
-                EndText: "N/A"
+                StartingText: "Distillery",
+                EndingText: "N/A"
             },
             {
-                FirstText: "Category",
-                EndText: "Gin"
+                StartingText: "Category",
+                EndingText: "Gin"
             },
             {
-                FirstText: "Brand",
-                EndText: "N/A"
+                StartingText: "Brand",
+                EndingText: "N/A"
             },
             {
-                FirstText: "Taste",
-                EndText: "Beefeater"
+                StartingText: "Taste",
+                EndingText: "Beefeater"
             },
             {
-                FirstText: "Region",
-                EndText: "N/A"
+                StartingText: "Region",
+                EndingText: "N/A"
             },
         ]
     },
@@ -443,6 +458,320 @@ export const SpiritCategory = [
     }
 ]
 
+export const GinCategory = [
+    {
+        id: "1",
+        pname: "Beefeater",
+        Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FLiquor%2BItems%2FBeefeater%2BGin.png&w=1920&q=75",
+        description: "Beefeater Pink strawberry is the vibrant new Pink Gin made using the original Beefeater London Dry Recipe with the addition of Natural Strawberry flavouring to give it a vibrant and delicious strawberry taste.",
+        persentAlcohol: " 40.00%",
+        VideoLink: "",
+        Ingredients: [
+        ],
+        Presentations: [
+        ],
+        Methods: [
+        ],
+        Details: [
+        ],
+        SecondDetails: [
+            {
+                StartingText: "Distillery",
+                EndingText: "N/A"
+            },
+            {
+                StartingText: "Category",
+                EndingText: "Gin"
+            },
+            {
+                StartingText: "Brand",
+                EndingText: "N/A"
+            },
+            {
+                StartingText: "Taste",
+                EndingText: "Beefeater"
+            },
+            {
+                StartingText: "Region",
+                EndingText: "N/A"
+            },
+        ],
+    },
+    {
+        id: "2",
+        pname: "Hendrick's",
+        Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FLiquor%2BItems%2FHendrick%27s%2BGin.png&w=1920&q=75",
+        description: "A superb, and utterly unique, pink-tinged gin from William Grant's. This is a must for all gin-lovers as it is infused with rose petals and cucumber as well as the normal botanicals.",
+        persentAlcohol: "47.00%",
+        VideoLink: "",
+        Ingredients: [
+        ],
+        Presentations: [
+        ],
+        Methods: [
+        ],
+        Details: [
+        ],
+        SecondDetails: [
+            {
+                StartingText: "Distillery",
+                EndingText: "N/A"
+            },
+            {
+                StartingText: "Category",
+                EndingText: "Gin"
+            },
+            {
+                StartingText: "Brand",
+                EndingText: "N/A"
+            },
+            {
+                StartingText: "Taste",
+                EndingText: "Hendrick's"
+            },
+            {
+                StartingText: "Region",
+                EndingText: "N/A"
+            },
+        ],
+    },
+    {
+        id: "3",
+        pname: "Aviation",
+        Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FLiquor%2BItems%2FAviation%2BGin.png&w=1920&q=75",
+        description: "Aviation American Gin is crafted in Portland, Oregon. It is designed to be softer and smoother than London Dry, with juniper in the back and citrus and floral notes in the front for a balanced medley of botanicals taking flavour to new heights.",
+        persentAlcohol: "42.00%",
+        VideoLink: "",
+        Ingredients: [
+        ],
+        Presentations: [
+        ],
+        Methods: [
+        ],
+        Details: [
+        ],
+        SecondDetails: [
+            {
+                StartingText: "Distillery",
+                EndingText: "N/A"
+            },
+            {
+                StartingText: "Category",
+                EndingText: "Gin"
+            },
+            {
+                StartingText: "Brand",
+                EndingText: "N/A"
+            },
+            {
+                StartingText: "Taste",
+                EndingText: "Aviation"
+            },
+            {
+                StartingText: "Region",
+                EndingText: "N/A"
+            },
+        ],
+    },
+]
+
+export const VodkaCategory = [
+    {
+        id: "1",
+        pname: "Absolut Citron",
+        Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FLiquor%2BItems%2FAbsolut%2BCitron%2BVodka%2BCore%2BBeverage.png&w=1920&q=75",
+        description: "The vibrant and fresh aroma of Absolut Citron showcases a straightforward and well-balanced lemon flavored vodka. Complimentary citrus notes of juicy lemon and a hint of tangy lime brighten the palate.",
+        persentAlcohol: " 40.00%",
+        VideoLink: "",
+        Ingredients: [
+        ],
+        Presentations: [
+        ],
+        Methods: [
+        ],
+        Details: [
+        ],
+        SecondDetails: [
+            {
+                StartingText: "Distillery",
+                EndingText: "N/A"
+            },
+            {
+                StartingText: "Category",
+                EndingText: "Vodka"
+            },
+            {
+                StartingText: "Brand",
+                EndingText: "N/A"
+            },
+            {
+                StartingText: "Taste",
+                EndingText: "ABSOLUT VODKA"
+            },
+            {
+                StartingText: "Region",
+                EndingText: "N/A"
+            },
+        ],
+    },
+    {
+        id: "2",
+        pname: "Tito's Handmade",
+        Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2F1702033101967-image%2520%25281%2529%25201.png&w=1920&q=75",
+        description: "It all started in Austin, Texas in the mid-90s, on the very same land where we sit today. It’s been over twenty years, but we still make it in batches, use old-fashioned pot stills, and taste-test every batch to make sure you get only the best",
+        persentAlcohol: " 40.00%",
+        VideoLink: "",
+        Ingredients: [
+        ],
+        Presentations: [
+        ],
+        Methods: [
+        ],
+        Details: [
+        ],
+        SecondDetails: [
+            {
+                StartingText: "Distillery",
+                EndingText: "N/A"
+            },
+            {
+                StartingText: "Category",
+                EndingText: "Vodka"
+            },
+            {
+                StartingText: "Brand",
+                EndingText: "N/A"
+            },
+            {
+                StartingText: "Taste",
+                EndingText: "Tito's Handmade"
+            },
+            {
+                StartingText: "Region",
+                EndingText: "N/A"
+            },
+        ],
+    },
+    {
+        id: "3",
+        pname: "Absolut 80",
+        Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FLiquor%2BItems%2FAbsolut%2B80%2BVodka.png&w=1920&q=75",
+        description: "Absolut Vodka is a Swedish vodka made exclusively from natural ingredients, and unlike some other vodkas, it doesn’t contain any added sugar. In fact Absolut is as clean as vodka can be. Still, it has a certain taste: Rich, full-bodied and complex, yet sm",
+        persentAlcohol: " 40.00%",
+        VideoLink: "",
+        Ingredients: [
+        ],
+        Presentations: [
+        ],
+        Methods: [
+        ],
+        Details: [
+        ],
+        SecondDetails: [
+            {
+                StartingText: "Distillery",
+                EndingText: "N/A"
+            },
+            {
+                StartingText: "Category",
+                EndingText: "Vodka"
+            },
+            {
+                StartingText: "Brand",
+                EndingText: "N/A"
+            },
+            {
+                StartingText: "Taste",
+                EndingText: "ABSOLUT"
+            },
+            {
+                StartingText: "Region",
+                EndingText: "N/A"
+            },
+        ],
+    },
+    {
+        id: "4",
+        pname: "Grey Goose",
+        Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FLiquor%2BItems%2FGrey%2BGoose%2BVodka.png&w=1920&q=75",
+        description: "Grey Goose premium vodka is created using only the finest French ingredients. Its two single-origin ingredients are winter wheat from Picardie and spring water from Gensac-la-Pallue.The soft winter wheat used in Grey Goose Vodka is the same high-quality w",
+        persentAlcohol: " 40.00%",
+        VideoLink: "",
+        Ingredients: [
+        ],
+        Presentations: [
+        ],
+        Methods: [
+        ],
+        Details: [
+        ],
+        SecondDetails: [
+            {
+                StartingText: "Distillery",
+                EndingText: "N/A"
+            },
+            {
+                StartingText: "Category",
+                EndingText: "Vodka"
+            },
+            {
+                StartingText: "Brand",
+                EndingText: "N/A"
+            },
+            {
+                StartingText: "Taste",
+                EndingText: "Grey Goose"
+            },
+            {
+                StartingText: "Region",
+                EndingText: "N/A"
+            },
+        ],
+    },
+    {
+        id: "5",
+        pname: "Grey Goose",
+        Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FLiquor%2BItems%2FGrey%2BGoose%2BVodka.png&w=1920&q=75",
+        description: "GREY GOOSE® is the result of an absolute determination to create a French vodka unlike any other. Expressed in GREY GOOSE® bottle is the essence of the finest ingredients from France; soft winter wheat from in and around Picardie plus pure spring water fr",
+        persentAlcohol: " 40.00%",
+        VideoLink: "",
+        Ingredients: [
+        ],
+        Presentations: [
+        ],
+        Methods: [
+        ],
+        Details: [
+        ],
+        SecondDetails: [
+            {
+                StartingText: "Distillery",
+                EndingText: "N/A"
+            },
+            {
+                StartingText: "Category",
+                EndingText: "Vodka"
+            },
+            {
+                StartingText: "Brand",
+                EndingText: "N/A"
+            },
+            {
+                StartingText: "Taste",
+                EndingText: "Grey Goose"
+            },
+            {
+                StartingText: "Region",
+                EndingText: "N/A"
+            },
+        ],
+    },
+
+
+
+]
+
+
 
 export const WineCategory = [
     {
@@ -468,26 +797,56 @@ export const BeerDetails = [
         Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FBeerSeltzer%2FBlue%2BMoon%2BBelgian%2BWhite.png&w=1920&q=75",
         Details: [
             {
-                FirstText: "Brewery",
-                EndText: "N/A"
+                StartingText: "Brewery",
+                EndingText: "N/A"
             },
             {
-                FirstText: "Wheat Ale",
-                EndText: "Gin"
+                StartingText: "Wheat Ale",
+                EndingText: "Gin"
             },
             {
-                FirstText: "Brand",
-                EndText: "N/A"
+                StartingText: "Brand",
+                EndingText: "N/A"
             },
             {
-                FirstText: "Taste",
-                EndText: "Beefeater"
+                StartingText: "Taste",
+                EndingText: "Beefeater"
             },
             {
-                FirstText: "Region",
-                EndText: "N/A"
+                StartingText: "Region",
+                EndingText: "N/A"
             },
-        ]
+        ],
+        Ingredients: [
+        ],
+        Presentations: [
+        ],
+        Methods: [
+        ],
+        Details: [
+        ],
+        SecondDetails: [
+            {
+                StartingText: "Brewery",
+                EndingText: "N/A"
+            },
+            {
+                StartingText: "Type",
+                EndingText: "Test."
+            },
+            {
+                StartingText: "Brand",
+                EndingText: "N/A"
+            },
+            {
+                StartingText: "Taste",
+                EndingText: "N/A"
+            },
+            {
+                StartingText: "Region",
+                EndingText: "N/A"
+            },
+        ],
     },
     {
         id: "2",
@@ -498,26 +857,56 @@ export const BeerDetails = [
         Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FBeerSeltzer%2FBudlight.png&w=1920&q=75",
         Details: [
             {
-                FirstText: "Brewery",
-                EndText: "N/A"
+                StartingText: "Brewery",
+                EndingText: "N/A"
             },
             {
-                FirstText: "Wheat Ale",
-                EndText: "Gin"
+                StartingText: "Wheat Ale",
+                EndingText: "Gin"
             },
             {
-                FirstText: "Brand",
-                EndText: "N/A"
+                StartingText: "Brand",
+                EndingText: "N/A"
             },
             {
-                FirstText: "Taste",
-                EndText: "Beefeater"
+                StartingText: "Taste",
+                EndingText: "Beefeater"
             },
             {
-                FirstText: "Region",
-                EndText: "N/A"
+                StartingText: "Region",
+                EndingText: "N/A"
             },
-        ]
+        ],
+        Ingredients: [
+        ],
+        Presentations: [
+        ],
+        Methods: [
+        ],
+        Details: [
+        ],
+        SecondDetails: [
+            {
+                StartingText: "Brewery",
+                EndingText: "N/A"
+            },
+            {
+                StartingText: "Wheat Ale",
+                EndingText: "Gin"
+            },
+            {
+                StartingText: "Brand",
+                EndingText: "N/A"
+            },
+            {
+                StartingText: "Taste",
+                EndingText: "Beefeater"
+            },
+            {
+                StartingText: "Region",
+                EndingText: "N/A"
+            },
+        ],
     },
     {
         id: "3",
@@ -528,26 +917,56 @@ export const BeerDetails = [
         Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FBeerSeltzer%2FBudweiser.png&w=1920&q=75",
         Details: [
             {
-                FirstText: "Brewery",
-                EndText: "N/A"
+                StartingText: "Brewery",
+                EndingText: "N/A"
             },
             {
-                FirstText: "Wheat Ale",
-                EndText: "Gin"
+                StartingText: "Wheat Ale",
+                EndingText: "Gin"
             },
             {
-                FirstText: "Brand",
-                EndText: "N/A"
+                StartingText: "Brand",
+                EndingText: "N/A"
             },
             {
-                FirstText: "Taste",
-                EndText: "Beefeater"
+                StartingText: "Taste",
+                EndingText: "Beefeater"
             },
             {
-                FirstText: "Region",
-                EndText: "N/A"
+                StartingText: "Region",
+                EndingText: "N/A"
             },
-        ]
+        ],
+        Ingredients: [
+        ],
+        Presentations: [
+        ],
+        Methods: [
+        ],
+        Details: [
+        ],
+        SecondDetails: [
+            {
+                StartingText: "Brewery",
+                EndingText: "N/A"
+            },
+            {
+                StartingText: "Wheat Ale",
+                EndingText: "Gin"
+            },
+            {
+                StartingText: "Brand",
+                EndingText: "N/A"
+            },
+            {
+                StartingText: "Taste",
+                EndingText: "Beefeater"
+            },
+            {
+                StartingText: "Region",
+                EndingText: "N/A"
+            },
+        ],
     },
     {
         id: "4",
@@ -558,26 +977,56 @@ export const BeerDetails = [
         Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FBeerSeltzer%2FCorona.png&w=1920&q=75",
         Details: [
             {
-                FirstText: "Brewery",
-                EndText: "N/A"
+                StartingText: "Brewery",
+                EndingText: "N/A"
             },
             {
-                FirstText: "Wheat Ale",
-                EndText: "Gin"
+                StartingText: "Wheat Ale",
+                EndingText: "Gin"
             },
             {
-                FirstText: "Brand",
-                EndText: "N/A"
+                StartingText: "Brand",
+                EndingText: "N/A"
             },
             {
-                FirstText: "Taste",
-                EndText: "Beefeater"
+                StartingText: "Taste",
+                EndingText: "Beefeater"
             },
             {
-                FirstText: "Region",
-                EndText: "N/A"
+                StartingText: "Region",
+                EndingText: "N/A"
             },
-        ]
+        ],
+        Ingredients: [
+        ],
+        Presentations: [
+        ],
+        Methods: [
+        ],
+        Details: [
+        ],
+        SecondDetails: [
+            {
+                StartingText: "Brewery",
+                EndingText: "N/A"
+            },
+            {
+                StartingText: "Wheat Ale",
+                EndingText: "Gin"
+            },
+            {
+                StartingText: "Brand",
+                EndingText: "N/A"
+            },
+            {
+                StartingText: "Taste",
+                EndingText: "Beefeater"
+            },
+            {
+                StartingText: "Region",
+                EndingText: "N/A"
+            },
+        ],
     },
     {
         id: "5",
@@ -588,26 +1037,56 @@ export const BeerDetails = [
         Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FBeerSeltzer%2FGuiness%2BDraught.png&w=1920&q=75",
         Details: [
             {
-                FirstText: "Brewery",
-                EndText: "N/A"
+                StartingText: "Brewery",
+                EndingText: "N/A"
             },
             {
-                FirstText: "Wheat Ale",
-                EndText: "Gin"
+                StartingText: "Wheat Ale",
+                EndingText: "Gin"
             },
             {
-                FirstText: "Brand",
-                EndText: "N/A"
+                StartingText: "Brand",
+                EndingText: "N/A"
             },
             {
-                FirstText: "Taste",
-                EndText: "Beefeater"
+                StartingText: "Taste",
+                EndingText: "Beefeater"
             },
             {
-                FirstText: "Region",
-                EndText: "N/A"
+                StartingText: "Region",
+                EndingText: "N/A"
             },
-        ]
+        ],
+        Ingredients: [
+        ],
+        Presentations: [
+        ],
+        Methods: [
+        ],
+        Details: [
+        ],
+        SecondDetails: [
+            {
+                StartingText: "Brewery",
+                EndingText: "N/A"
+            },
+            {
+                StartingText: "Wheat Ale",
+                EndingText: "Gin"
+            },
+            {
+                StartingText: "Brand",
+                EndingText: "N/A"
+            },
+            {
+                StartingText: "Taste",
+                EndingText: "Beefeater"
+            },
+            {
+                StartingText: "Region",
+                EndingText: "N/A"
+            },
+        ],
     },
     {
         id: "6",
@@ -618,26 +1097,56 @@ export const BeerDetails = [
         Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FBeerSeltzer%2FHeineken.png&w=1920&q=75",
         Details: [
             {
-                FirstText: "Brewery",
-                EndText: "N/A"
+                StartingText: "Brewery",
+                EndingText: "N/A"
             },
             {
-                FirstText: "Wheat Ale",
-                EndText: "Gin"
+                StartingText: "Wheat Ale",
+                EndingText: "Gin"
             },
             {
-                FirstText: "Brand",
-                EndText: "N/A"
+                StartingText: "Brand",
+                EndingText: "N/A"
             },
             {
-                FirstText: "Taste",
-                EndText: "Beefeater"
+                StartingText: "Taste",
+                EndingText: "Beefeater"
             },
             {
-                FirstText: "Region",
-                EndText: "N/A"
+                StartingText: "Region",
+                EndingText: "N/A"
             },
-        ]
+        ],
+        Ingredients: [
+        ],
+        Presentations: [
+        ],
+        Methods: [
+        ],
+        Details: [
+        ],
+        SecondDetails: [
+            {
+                StartingText: "Brewery",
+                EndingText: "N/A"
+            },
+            {
+                StartingText: "Wheat Ale",
+                EndingText: "Gin"
+            },
+            {
+                StartingText: "Brand",
+                EndingText: "N/A"
+            },
+            {
+                StartingText: "Taste",
+                EndingText: "Beefeater"
+            },
+            {
+                StartingText: "Region",
+                EndingText: "N/A"
+            },
+        ],
     },
     {
         id: "7",
@@ -648,26 +1157,56 @@ export const BeerDetails = [
         Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FBeerSeltzer%2FMichelob%2BUltra.png&w=1920&q=75",
         Details: [
             {
-                FirstText: "Brewery",
-                EndText: "N/A"
+                StartingText: "Brewery",
+                EndingText: "N/A"
             },
             {
-                FirstText: "Wheat Ale",
-                EndText: "Gin"
+                StartingText: "Wheat Ale",
+                EndingText: "Gin"
             },
             {
-                FirstText: "Brand",
-                EndText: "N/A"
+                StartingText: "Brand",
+                EndingText: "N/A"
             },
             {
-                FirstText: "Taste",
-                EndText: "Beefeater"
+                StartingText: "Taste",
+                EndingText: "Beefeater"
             },
             {
-                FirstText: "Region",
-                EndText: "N/A"
+                StartingText: "Region",
+                EndingText: "N/A"
             },
-        ]
+        ],
+        Ingredients: [
+        ],
+        Presentations: [
+        ],
+        Methods: [
+        ],
+        Details: [
+        ],
+        SecondDetails: [
+            {
+                StartingText: "Brewery",
+                EndingText: "N/A"
+            },
+            {
+                StartingText: "Wheat Ale",
+                EndingText: "Gin"
+            },
+            {
+                StartingText: "Brand",
+                EndingText: "N/A"
+            },
+            {
+                StartingText: "Taste",
+                EndingText: "Beefeater"
+            },
+            {
+                StartingText: "Region",
+                EndingText: "N/A"
+            },
+        ],
     },
     {
         id: "8",
@@ -678,26 +1217,56 @@ export const BeerDetails = [
         Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FBeerSeltzer%2FMiller%2BLite.png&w=1920&q=75",
         Details: [
             {
-                FirstText: "Brewery",
-                EndText: "N/A"
+                StartingText: "Brewery",
+                EndingText: "N/A"
             },
             {
-                FirstText: "Wheat Ale",
-                EndText: "Gin"
+                StartingText: "Wheat Ale",
+                EndingText: "Gin"
             },
             {
-                FirstText: "Brand",
-                EndText: "N/A"
+                StartingText: "Brand",
+                EndingText: "N/A"
             },
             {
-                FirstText: "Taste",
-                EndText: "Beefeater"
+                StartingText: "Taste",
+                EndingText: "Beefeater"
             },
             {
-                FirstText: "Region",
-                EndText: "N/A"
+                StartingText: "Region",
+                EndingText: "N/A"
             },
-        ]
+        ],
+        Ingredients: [
+        ],
+        Presentations: [
+        ],
+        Methods: [
+        ],
+        Details: [
+        ],
+        SecondDetails: [
+            {
+                StartingText: "Brewery",
+                EndingText: "N/A"
+            },
+            {
+                StartingText: "Wheat Ale",
+                EndingText: "Gin"
+            },
+            {
+                StartingText: "Brand",
+                EndingText: "N/A"
+            },
+            {
+                StartingText: "Taste",
+                EndingText: "Beefeater"
+            },
+            {
+                StartingText: "Region",
+                EndingText: "N/A"
+            },
+        ],
     },
     {
         id: "9",
@@ -708,26 +1277,56 @@ export const BeerDetails = [
         Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FBeerSeltzer%2FModelo%2BEspecial.png&w=1920&q=75",
         Details: [
             {
-                FirstText: "Brewery",
-                EndText: "N/A"
+                StartingText: "Brewery",
+                EndingText: "N/A"
             },
             {
-                FirstText: "Wheat Ale",
-                EndText: "Gin"
+                StartingText: "Wheat Ale",
+                EndingText: "Gin"
             },
             {
-                FirstText: "Brand",
-                EndText: "N/A"
+                StartingText: "Brand",
+                EndingText: "N/A"
             },
             {
-                FirstText: "Taste",
-                EndText: "Beefeater"
+                StartingText: "Taste",
+                EndingText: "Beefeater"
             },
             {
-                FirstText: "Region",
-                EndText: "N/A"
+                StartingText: "Region",
+                EndingText: "N/A"
             },
-        ]
+        ],
+        Ingredients: [
+        ],
+        Presentations: [
+        ],
+        Methods: [
+        ],
+        Details: [
+        ],
+        SecondDetails: [
+            {
+                StartingText: "Brewery",
+                EndingText: "N/A"
+            },
+            {
+                StartingText: "Wheat Ale",
+                EndingText: "Gin"
+            },
+            {
+                StartingText: "Brand",
+                EndingText: "N/A"
+            },
+            {
+                StartingText: "Taste",
+                EndingText: "Beefeater"
+            },
+            {
+                StartingText: "Region",
+                EndingText: "N/A"
+            },
+        ],
     },
     {
         id: "10",
@@ -738,26 +1337,56 @@ export const BeerDetails = [
         Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FBeerSeltzer%2FSam%2BAdams%2BBoston%2BLager.png&w=1920&q=75",
         Details: [
             {
-                FirstText: "Brewery",
-                EndText: "N/A"
+                StartingText: "Brewery",
+                EndingText: "N/A"
             },
             {
-                FirstText: "Wheat Ale",
-                EndText: "Gin"
+                StartingText: "Wheat Ale",
+                EndingText: "Gin"
             },
             {
-                FirstText: "Brand",
-                EndText: "N/A"
+                StartingText: "Brand",
+                EndingText: "N/A"
             },
             {
-                FirstText: "Taste",
-                EndText: "Beefeater"
+                StartingText: "Taste",
+                EndingText: "Beefeater"
             },
             {
-                FirstText: "Region",
-                EndText: "N/A"
+                StartingText: "Region",
+                EndingText: "N/A"
             },
-        ]
+        ],
+        Ingredients: [
+        ],
+        Presentations: [
+        ],
+        Methods: [
+        ],
+        Details: [
+        ],
+        SecondDetails: [
+            {
+                StartingText: "Brewery",
+                EndingText: "N/A"
+            },
+            {
+                StartingText: "Wheat Ale",
+                EndingText: "Gin"
+            },
+            {
+                StartingText: "Brand",
+                EndingText: "N/A"
+            },
+            {
+                StartingText: "Taste",
+                EndingText: "Beefeater"
+            },
+            {
+                StartingText: "Region",
+                EndingText: "N/A"
+            },
+        ],
     },
     {
         id: "11",
@@ -768,26 +1397,56 @@ export const BeerDetails = [
         Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FBeerSeltzer%2FTruly%2BHard%2BSeltzer.png&w=1920&q=75",
         Details: [
             {
-                FirstText: "Brewery",
-                EndText: "N/A"
+                StartingText: "Brewery",
+                EndingText: "N/A"
             },
             {
-                FirstText: "Wheat Ale",
-                EndText: "Gin"
+                StartingText: "Wheat Ale",
+                EndingText: "Gin"
             },
             {
-                FirstText: "Brand",
-                EndText: "N/A"
+                StartingText: "Brand",
+                EndingText: "N/A"
             },
             {
-                FirstText: "Taste",
-                EndText: "Beefeater"
+                StartingText: "Taste",
+                EndingText: "Beefeater"
             },
             {
-                FirstText: "Region",
-                EndText: "N/A"
+                StartingText: "Region",
+                EndingText: "N/A"
             },
-        ]
+        ],
+        Ingredients: [
+        ],
+        Presentations: [
+        ],
+        Methods: [
+        ],
+        Details: [
+        ],
+        SecondDetails: [
+            {
+                StartingText: "Brewery",
+                EndingText: "N/A"
+            },
+            {
+                StartingText: "Wheat Ale",
+                EndingText: "Gin"
+            },
+            {
+                StartingText: "Brand",
+                EndingText: "N/A"
+            },
+            {
+                StartingText: "Taste",
+                EndingText: "Beefeater"
+            },
+            {
+                StartingText: "Region",
+                EndingText: "N/A"
+            },
+        ],
     },
 ]
 
@@ -799,12 +1458,12 @@ export const LowNoABV = [
         Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FLowNoABV%2FRed%2BBull%2BRegular.png&w=1920&q=75",
         Details: [
             {
-                FirstText: "Taste",
-                EndText: "N/A"
+                StartingText: "Taste",
+                EndingText: "N/A"
             },
             {
-                FirstText: "Region",
-                EndText: "N/A"
+                StartingText: "Region",
+                EndingText: "N/A"
             },
         ]
     },
@@ -815,12 +1474,12 @@ export const LowNoABV = [
         Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FLowNoABV%2FRed%2BBull%2BSugarfree.png&w=1920&q=75",
         Details: [
             {
-                FirstText: "Taste",
-                EndText: "N/A"
+                StartingText: "Taste",
+                EndingText: "N/A"
             },
             {
-                FirstText: "Region",
-                EndText: "N/A"
+                StartingText: "Region",
+                EndingText: "N/A"
             },
         ]
     },
@@ -831,12 +1490,12 @@ export const LowNoABV = [
         Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FMixersGarnish%2FFever%2BTree%2BGinger%2BBeer.png&w=1920&q=75",
         Details: [
             {
-                FirstText: "Taste",
-                EndText: "N/A"
+                StartingText: "Taste",
+                EndingText: "N/A"
             },
             {
-                FirstText: "Region",
-                EndText: "N/A"
+                StartingText: "Region",
+                EndingText: "N/A"
             },
         ]
     },
@@ -847,12 +1506,12 @@ export const LowNoABV = [
         Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FLowNoABV%2FHeineken%2B0.0.png&w=1920&q=75",
         Details: [
             {
-                FirstText: "Taste",
-                EndText: "N/A"
+                StartingText: "Taste",
+                EndingText: "N/A"
             },
             {
-                FirstText: "Region",
-                EndText: "N/A"
+                StartingText: "Region",
+                EndingText: "N/A"
             },
         ]
     }
@@ -1315,11 +1974,11 @@ export const HistoryCourses = [
     },
 ]
 
-export const CheckList= [
+export const CheckList = [
     {
-        description : "Opening Sidework for Bartenders"
+        description: "Opening Sidework for Bartenders"
     },
     {
-        description : "Opening Sidework for Bartenders"
+        description: "Opening Sidework for Bartenders"
     }
 ]
