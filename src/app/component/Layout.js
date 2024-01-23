@@ -107,7 +107,8 @@ export default function Layout({ children }) {
     const theme = useTheme();
     const [open, setOpen] = useState(true);
     const [isDarkMode, setDarkMode] = useState(false);
-    const [isCollapselibrary, setIsCollapseLibrary] = useState(false);
+    const [isCollapsespecs, setisCollapsespecs] = useState(false);
+    const [isCollapselibrary, setisCollaplibrary] = useState(false);
 
     // functon for open sidenavbar 
     const handleDrawerOpen = () => {
@@ -120,8 +121,13 @@ export default function Layout({ children }) {
     };
 
     // function for view all sub tabs of specs section 
-    const handleCollapseLibrary = () => {
-        setIsCollapseLibrary(!isCollapselibrary);
+    const handleCollapseSpecs = () => {
+        setisCollapsespecs(!isCollapsespecs);
+    };
+
+    //function for view all sub tabs of library section 
+    const handleCollapLibrary = () => {
+        setisCollaplibrary(!isCollapselibrary);
     };
 
     // function for toogle button of changing light to dark mode 
@@ -135,8 +141,14 @@ export default function Layout({ children }) {
     };
 
     // function for calling invoking two function at onclick at specs section
-    const handleWrapper = (text) => {
-        handleCollapseLibrary();
+    const handleWrapperSpecs = (text) => {
+        handleCollapseSpecs();
+        handleTabClick(text);
+    };
+
+    // function for calling invoking two function at onclick at library section
+    const handleWrapperLibrary = (text) => {
+        handleCollapLibrary();
         handleTabClick(text);
     };
 
@@ -230,7 +242,7 @@ export default function Layout({ children }) {
                         ))}
 
                     {/* Spec main section tab  */}
-                    <ListItem className={Style.ListItem} onClick={() => handleWrapper("Specs")}>
+                    <ListItem className={Style.ListItem} onClick={() => handleWrapperSpecs("Specs")}>
                         <ListItemButton className={Style.ListItemButton}
                             sx={{ justifyContent: open ? 'initial' : 'center' }} >
                             <ListItemIcon className={Style.ListItemIcon}
@@ -238,12 +250,12 @@ export default function Layout({ children }) {
                                 <LocalBarIcon />
                             </ListItemIcon>
                             <ListItemText primary="Specs" sx={{ opacity: open ? 1 : 0 }} />
-                            {open ? (isCollapselibrary ? <ExpandLess /> : <ExpandMore />) : 'Specs'}
+                            {open ? (isCollapsespecs ? <ExpandLess /> : <ExpandMore />) : 'Specs'}
                         </ListItemButton>
                     </ListItem>
 
                     {/* Inner tabs of specs section  */}
-                    <Collapse in={isCollapselibrary} timeout="auto">
+                    <Collapse in={isCollapsespecs} timeout="auto">
                         {['Cocktails', 'Spirits', 'Wine', 'Beer', 'Low',].map((text, index) => (
                             <ListItem key={text} className={Style.ListItem} onClick={() => handleTabClick("Specs/" + text)}>
                                 <ListItemButton className={Style.ListItemButton}
@@ -264,6 +276,40 @@ export default function Layout({ children }) {
                             </ListItem>
                         ))}
                     </Collapse>
+
+                    {/* library section start here  */}
+                    <ListItem className={Style.ListItem} onClick={() => handleWrapperLibrary("Library")}>
+                        <ListItemButton className={Style.ListItemButton}
+                            sx={{ justifyContent: open ? 'initial' : 'center' }} >
+                            <ListItemIcon className={Style.ListItemIcon}
+                                sx={{ mr: open ? 3 : 'auto', }}>
+                                <LocalLibraryIcon />
+                            </ListItemIcon>
+                            <ListItemText primary="Library" sx={{ opacity: open ? 1 : 0 }} />
+                            {open ? (isCollapselibrary ? <ExpandLess /> : <ExpandMore />) : 'Library'}
+                        </ListItemButton>
+                    </ListItem>
+
+                    {/* inner tabs of library section  */}
+                    <Collapse in={isCollapselibrary} timeout="auto">
+                        {['Courses', 'Flashcards', 'Quizzes'].map((text, index) => (
+                            <ListItem key={text} className={Style.ListItem} onClick={() => handleTabClick("Library/" + text)}>
+                                <ListItemButton className={Style.ListItemButton}
+                                    sx={{ justifyContent: open ? 'initial' : 'center' }}
+                                >
+                                    <ListItemIcon className={Style.ListItemIcon}
+                                        sx={{ mr: open ? 3 : 'auto' }}
+                                    >
+                                        {index === 0 && <SubdirectoryArrowRightIcon />}
+                                        {index === 1 && <SubdirectoryArrowRightIcon />}
+                                        {index === 2 && <SubdirectoryArrowRightIcon />}
+                                    </ListItemIcon>
+                                    <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
+                                </ListItemButton>
+                            </ListItem>
+                        ))}
+                    </Collapse>
+
                 </List>
 
             </Drawer>

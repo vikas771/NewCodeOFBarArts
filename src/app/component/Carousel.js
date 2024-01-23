@@ -22,8 +22,8 @@ const Carousel = (props) => {
 
     return (
         <>
-        {/* Carousel main section we get here hegiht and set here  */}
-            <div className={Style.CarouselMainParent} style={{height: props.mainCarouselHeight}}>
+            {/* Carousel main section we get here hegiht and set here  */}
+            <div className={Style.CarouselMainParent} style={{ height: props.mainCarouselHeight }}>
                 {/* set Carousel heading here  */}
                 <div className={Style.CarouselHeading}>
                     <div>
@@ -38,12 +38,13 @@ const Carousel = (props) => {
                 <div className={Style.CarouselDetailsParent} ref={firstBox}>
                     {/* apply map method at data  */}
                     {carouselData.map((item, index) => (
-                        <div key={index} className={Style.CarouselImgTextParent} style={{backgroundColor: props.backgroundColor}}>
+                        <div key={index} className={Style.CarouselImgTextParent} style={{ backgroundColor: props.backgroundColor , width:props.imgParentWidth}}>
                             {/* Carousel img set here  */}
-                            <img src={item.Url} alt='not found' style={{height: props.imageHeight, width: props.imageWidth}}/>
+                            <img src={item.Url} alt='not found' style={{ height: props.imageHeight, width: props.imageWidth }} />
                             {/* Carousel img name set here  */}
                             {item.productname && <h3>{item.productname}</h3>}
-                            <h4>{item.pname}</h4>
+                            <h4 style={{ color: props.color, top: props.top, left: props.left }}>{item.pname}</h4>
+                            <p>{item.question} {props.subHeading}</p>
                         </div>
                     ))}
                 </div>

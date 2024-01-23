@@ -1,0 +1,47 @@
+
+.parent_checklist{
+    margin-top: 5px !important;
+    background-color: white;
+    padding: 18px;
+}
+
+.GridParent{
+    background-color: rgba(248, 248, 248, 255);
+}
+
+.IconAndText{
+    display: flex !important;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.IconAndText h5{
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.ProgressParent{
+    margin-bottom: 10px !important;
+}
+
+.ProgressParent{
+    display: flex;
+    justify-content: space-between;
+}
+.ProgressParent p{
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.ProgressParent span{
+    color: rgba(255,131,65,255);
+}
+
+  .ProgessBar{
+    background-color: rgba(231,231,231,255);
+    border-radius: 10px;
+    height: 10px;
+  }

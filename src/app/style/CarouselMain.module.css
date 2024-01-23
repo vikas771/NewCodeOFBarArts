@@ -58,12 +58,20 @@
 }
 
 .CarouselImgTextParent h4{
+    font-size: 14px !important;
     position: absolute;
     top:80%;
     left:8%;
     color:White;
     margin-top:0px !important;
     margin-bottom:0px !important;
+}
+
+.CarouselImgTextParent p{
+    font-size: 14px;
+    margin-top:30px !important;
+    margin-bottom:0px !important;
+    text-align: initial;
 }
 
 /* first carousel end  here of Cocktails */
