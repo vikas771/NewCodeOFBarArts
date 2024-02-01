@@ -8,6 +8,9 @@ import CartDetails from '../../../component/CartDetails'
 import {GinCategory} from '../../../productDetails';
 
 const page = () => {
+
+    
+
     return (
         <>
             <Layout>
